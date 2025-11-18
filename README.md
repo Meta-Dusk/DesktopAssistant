@@ -4,19 +4,19 @@
 
 > Started on September 22, 2025
 
-# Preview
+## Preview
 
 Below is a preview of what you'd expect with the app (as of version `0.4.X`):
 
 ![MikuMiku App v0.4.0 Preview GIF](https://github.com/user-attachments/assets/743c5e1e-82b9-4eb1-bb8c-a431f940287e)
 
-# Wiki
+## Wiki
 
 I just made a Wiki for this project, you can access it here now: [DesktopAssistant Wiki](https://github.com/Meta-Dusk/DesktopAssistant/wiki)
 
 > I'm thinking if I should just move everything to the Wiki instead of having most of the information here in the `README.md`... Should I?
 
-# Feature List
+## Feature List
 
 Below are the current features implemented:
 
@@ -30,7 +30,7 @@ Below are the current features implemented:
 | **Animations** | Various smooth animations |
 | **A Menu** | So far, there's only one menu for now |
 
-# Planned Features
+## Planned Features
 
 The planned features below can be found in the `experimental branch` once development has begun.
 
@@ -43,7 +43,7 @@ The planned features below can be found in the `experimental branch` once develo
 | **Minigames** | Games that you can play with Miku | 0% | - |
 | **Desktop Assistance** | Stuff that could actually assist you with your pc | 0% | - |
 
-# Unintended Behaviors
+## Unintended Behaviors
 
 - You can run multiple instances of Miku, by just simply running the executable again; the result is a shocker... **Mikus Galore!** (There's some visual bugs, such as `z-fighting`[^1], but it does work, and may or may not use a lot of your pc's resources).
 
@@ -53,17 +53,17 @@ Below is what this unintended behavior would look like:
 
 [^1]: `z-fighting` refers to a rendering issue that occurs usually in games. It's a visual bug, that shows rapid fluctuation between two textures that are overlapping each other on the same layer. This issue can be fixed by simply spacing these layers a bit further from the z-axis, which is why they are referred to as `z-fighting`. As for this app, the *band-aid* solution I've implemented for when you want multiple Mikus in your desktop, is by simply having them only force a `always bring to front` state after movement commands, and for a specified duration (such as a second) only.
 
-# Controls
+## Controls
 
 > This section will be removed once the menu feature has been implemented.
 > The controls being referred here are for interacting with Miku, or used directly on her.
 
 | Button | Action | Additional Actions |
 | ----------- | ----------- | ----------- |
-| **Left Click** | Default interaction. | [1] Click twice to open/close the menu.<br> [2] Click and hold to drag Miku around. |
+| **Left Click** | Default interaction. | [1] Click twice to open/close the menu. <br> [2] Click and hold to drag Miku around. |
 | **Right Click** | Clicking will open a prompt for exiting. | Click again to exit. <br> > (Doing *Right Click* twice will **exit** the app) |
 
-# Known Issues and Fixes
+## Known Issues and Fixes
 
 Please do report any issues found that are not solvable with the fixes provided in the tables below:
 
