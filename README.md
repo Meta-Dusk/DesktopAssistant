@@ -38,52 +38,20 @@ I just made a Wiki for this project, you can access it here now: [DesktopAssista
 > This section will be removed once the menu feature has been implemented.
 > The controls being referred here are for interacting with Miku, or used directly on her.
 
-### Left-click
-
-Default interaction. Click twice for a menu. Clicking then holding is a placeholder for now.
-
-### Right-click
-
-Click twice to exit.
-
-### Left-click + drag
-
-Will move Miku around.
+| Action | Behavior |
+| ------ | -------- |
+| **Left-Click** | Default interaction. Click twice for a menu. Clicking then holding is a placeholder for now. |
+| **Right-Click** | Click twice to exit. |
+| **Left-Click + Drag** | Will move Miku around. |
 
 ## Known Issues and Fixes
 
 Please do report any issues found that are not solvable with the fixes provided below:
 
-### Fix 1
-
-Relaunch the app. Refer to the [Controls](#controls) section.
-
-### Fix 2
-
-Move Miku around your screen, then stop. Refer to the [Controls](#controls) section.
-
-### Fix 3
-
-Open a menu. Refer to the [Controls](#controls) section.
-
-### The Known Issues
-
-1. Miku, the window, or the speech bubble appears to be stretched, clipped, or stretched.
-    - Try [Fix 3](#fix-3) first then [Fix 1](#fix-1) if it doesn't work.
-    - *This issue could be because of how `Flet` handles transparent windows.*
-2. A border around Miku appears during app launch.
-    - Try [Fix 1](#fix-1).
-    - *This issue could also be because of how `Flet` handles transparent windows.*
-3. Miku suddenly stops her idle animation.
-    - Try [Fix 2](#fix-2).
-    - *This issue occurs when clicking her registers as a drag event, but is immediately canceled, resulting in the events not registering correctly.*
-4. After dragging Miku, her position doesn't update, and will return to her initial position pre-drag; happens occasionally, but nothing serious.
-    - *This issue is still under scrutiny.*
-5. Miku's randomized movement anchor is misplaced once dragged off-screen at the bottom; only happens if you intentionally drag her way below bounds of the monitor.
-    - *This issue is still under scrutiny.*
-6. When launching the app, it sometimes just doesn't stop loading.
-    - Try [Fix 1](#fix-1).
-    - *This issue is still under scrutiny.*
-7. **(Potentially Fixed)** When launching the app, it sometiems refuses to show itself, thus forcing the app to become a background process, which can only be exited by ending it in the task manager, which is very inconvenient.
-    - You can try [Fix 1](#fix-1) but I sure hope this doesn't happen **at all**.
-    - I've implemented a hot fix for this, and the possible reason for this issue, is with how `flet` handles page visibility, when it has been initially set to `False`.
+| No. | Issue | Fix | Severity | Description |
+| --- | ----- | --- | -------- | ----------- |
+| 1 | A border around Miku appears during app launch | Relaunch the app | Minor graphical issue | This issue could also be because of how `Flet` handles transparent windows. |
+| 2 | Miku suddenly stops her idle animation | Move Miku around your screen, then stop | Minor interaction issue | This issue occurs when clicking her registers as a drag event, but is immediately canceled, resulting in the events not registering correctly |
+| 3 | After dragging Miku, her position doesn't update, and will return to her initial position pre-drag | _This issue is still under scrutiny_ | Minor interaction issue | Happens occasionally, but nothing serious |
+| 4 | Miku's randomized movement anchor is misplaced once dragged off-screen at the bottom | _This issue is still under scrutiny_ | Minor interaction issue | Only happens if you intentionally drag her way below bounds of the monitor |
+| 5 | When launching the app, it sometimes just doesn't stop loading | Relaunch the app | Startup issue | _This issue is still under scrutiny_ |
