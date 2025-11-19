@@ -71,13 +71,10 @@ Please do report any issues found that are not solvable with the fixes provided 
 
 | No. | Issue | Description | Any Fixes? | Is it Fixed? |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| 1 | Miku, the window, or the speech bubble appears to be stretched, clipped, or stretched. | This issue could be because of how `Flet` handles transparent windows. | Try **Fix No. 3** first then **Fix No. 1** if it doesn't work. | Nope, only occurs sometimes. |
-| 2 | A border around Miku appears during app launch. | This issue could also be because of how `Flet` handles transparent windows. | Try **Fix No. 1**. | Nope, only occurs sometimes. |
-| 3 | Miku suddenly stops her idle animation. | This issue occurs when clicking her registers as a drag event, but is immediately canceled, resulting in the events not registering correctly. | Try **Fix No. 2**. | Only occurs during overlapping action registers. |
-| 4 | After dragging Miku, her position doesn't update, and will return to her initial position pre-drag; happens occasionally, but nothing serious. | This issue is still under scrutiny. | Fixes itself. | Occurs rarely, and probably also during overlapping action registers. |
-| 5 | Miku's randomized movement anchor is misplaced once dragged off-screen at the bottom; only happens if you intentionally drag her way below bounds of the monitor. | This issue is still under scrutiny. | Fixes itself if you just don't drag her way below the boundaries of your monitor. | Happens all the time based on my testing. |
-| 6 | When launching the app, it sometimes just doesn't stop loading. | This issue is still under scrutiny. | Try **Fix No. 1**. | Probably only happens if your device has a lot of background apps. |
-| 7 | ~When launching the app, it sometimes refuses to show itself, thus forcing the app to become a background process, which can only be exited by ending it in the task manager, which is very inconvenient.~ | I've implemented a hot fix for this, and the possible reason for this issue, is with how `flet` handles page visibility, when it has been initially set to `False`. | You can try **Fix No. 1** if it happens. | This issue **should be fixed** by now, as I've applied a hot fix for this. |
+| 1 | Miku suddenly stops her idle animation. | This issue occurs when clicking her registers as a drag event, but is immediately canceled, resulting in the events not registering correctly. | Try **Fix No. 2**. | Only occurs during overlapping action registers. |
+| 2 | After dragging Miku, her position doesn't update, and will return to her initial position pre-drag; happens occasionally, but nothing serious. | This issue is still under scrutiny. | Fixes itself. | Occurs rarely, and probably also during overlapping action registers. |
+| 3 | Miku's randomized movement anchor is misplaced once dragged off-screen at the bottom; only happens if you intentionally drag her way below bounds of the monitor. | This issue is still under scrutiny. | Fixes itself if you just don't drag her way below the boundaries of your monitor. | Happens all the time based on my testing. |
+| 4 | When launching the app, it sometimes just doesn't stop loading. | This issue is still under scrutiny. | Try **Fix No. 1**. | Probably only happens if your device has a lot of background apps. |
 
 ## Known Solutions List
 
